@@ -1,4 +1,3 @@
-<h1>REGISTRO ELETTRONICO OHM</h1>
 <h6>Versione 1</h6>
 <h6>27/01/2017</h6>
   <h3>Descrizione programma:</h3>
