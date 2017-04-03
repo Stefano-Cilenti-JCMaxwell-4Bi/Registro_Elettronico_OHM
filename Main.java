@@ -27,9 +27,9 @@ public class Main {
                 
                 Studente [] studenti3 = new Studente[30];
                 //"Nome"; "Cognome"; "Classe"; ID; "Password"
-		studenti3[0] =  new Studente ("Tapro", "Lano", "4A Tele", 1, "753");
+		studenti3[0] =  new Studente ("Gianluca", "Lano", "4A Tele", 1, "753");
 		studenti3[1] =  new Studente ("Giuseppe", "Simone", "4A Tele", 2, "984");
-		studenti3[2] =  new Studente ("Santa", "Fede", "4A Tele", 3, "126");
+		studenti3[2] =  new Studente ("Stefano", "Cilenti", "4A Tele", 3, "126");
 //		System.out.println("studenti: "+studenti[0].getNome());
 		
 		Professore [] professori = new Professore[10];
@@ -38,14 +38,14 @@ public class Main {
 		professori[2] =  new Professore ("Marco", "Nero", "4A Info", 3, "789", "Inglese");
                 
                 Professore [] professori2 = new Professore[10];
-		professori2[0] =  new Professore ("Giuda", "Inferocito", "4B Info", 1, "754", "Diritto"); 
+		professori2[0] =  new Professore ("Gianna", "Graco", "4B Info", 1, "754", "Diritto"); 
 		professori2[1] =  new Professore ("Pietro", "Smusi", "4B Info", 2,  "457", "Scienze"); 
 		professori2[2] =  new Professore ("Marco", "Gennarini", "4B Info", 3, "956", "Latino");
                 
                 Professore [] professori3 = new Professore[10];
-		professori3[0] =  new Professore ("Ma", "Rijuana", "4A Tele", 1, "754", "Diritto"); 
-		professori3[1] =  new Professore ("Franco", "Impasticcato", "4A Tele", 2,  "457", "Scienze"); 
-		professori3[2] =  new Professore ("Paolo", "Infroci", "4B Info", 3, "956", "Latino");
+		professori3[0] =  new Professore ("Pippo", "Franco", "4A Tele", 1, "754", "Diritto"); 
+		professori3[1] =  new Professore ("Franco", "Impastato", "4A Tele", 2,  "457", "Scienze"); 
+		professori3[2] =  new Professore ("Paolo", "Ken", "4B Info", 3, "956", "Latino");
 		
 		Classe [] classi = new Classe [3];
 		classi[0] = new Classe("4A INFO", studenti, professori);
