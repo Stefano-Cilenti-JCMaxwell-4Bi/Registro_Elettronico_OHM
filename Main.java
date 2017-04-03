@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-		System.out.println("*** REGISTRO ELETTRONICO ohm ***\n");
+		System.out.println("*** REGISTRO ELETTRONICO OHM ***\n");
 		
 		Registro accesso = new Registro();
 		
