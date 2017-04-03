@@ -6,13 +6,14 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-		System.out.println("*** REGISTRO ELETTRONICO OHM ***\n");
+		System.out.println("*** REGISTRO ELETTRONICO ***\n");
 		
 		Registro accesso = new Registro();
 		
 		Scanner input = new Scanner(System.in);
 		//inizializiamo studenti e classi
 		Studente [] studenti = new Studente[30];
+                //"Nome"; "Cognome"; "Classe"; ID; "Password"
 		studenti[0] =  new Studente ("Luigi", "Verdi", "4A Info", 1, "123");
 		studenti[1] =  new Studente ("Anna", "Bianchi", "4A Info", 2, "456");
 		studenti[2] =  new Studente ("Mario", "Rossi", "4A Info", 3, "789");
@@ -23,15 +24,33 @@ public class Main {
 		studenti2[1] =  new Studente ("Luca", "Ferocino", "4B Info", 2,  "765"); 
 		studenti2[2] =  new Studente ("Maria", "Gialli", "4B Info", 3, "789");
 //		System.out.println("studenti2: "+studenti2[0].getNome());
+                
+                Studente [] studenti3 = new Studente[30];
+                //"Nome"; "Cognome"; "Classe"; ID; "Password"
+		studenti3[0] =  new Studente ("Tapro", "Lano", "4A Tele", 1, "753");
+		studenti3[1] =  new Studente ("Giuseppe", "Simone", "4A Tele", 2, "984");
+		studenti3[2] =  new Studente ("Santa", "Fede", "4A Tele", 3, "126");
+//		System.out.println("studenti: "+studenti[0].getNome());
 		
 		Professore [] professori = new Professore[10];
 		professori[0] =  new Professore ("Andrea", "Blu", "4A Info", 1, "123", "Informatica"); 
 		professori[1] =  new Professore ("Piero", "Viola", "4A Info", 2,  "456", "Italiano"); 
 		professori[2] =  new Professore ("Marco", "Nero", "4A Info", 3, "789", "Inglese");
+                
+                Professore [] professori2 = new Professore[10];
+		professori2[0] =  new Professore ("Giuda", "Inferocito", "4B Info", 1, "754", "Diritto"); 
+		professori2[1] =  new Professore ("Pietro", "Smusi", "4B Info", 2,  "457", "Scienze"); 
+		professori2[2] =  new Professore ("Marco", "Gennarini", "4B Info", 3, "956", "Latino");
+                
+                Professore [] professori3 = new Professore[10];
+		professori3[0] =  new Professore ("Ma", "Rijuana", "4A Tele", 1, "754", "Diritto"); 
+		professori3[1] =  new Professore ("Franco", "Impasticcato", "4A Tele", 2,  "457", "Scienze"); 
+		professori3[2] =  new Professore ("Paolo", "Infroci", "4B Info", 3, "956", "Latino");
 		
-		Classe [] classi = new Classe [2];
+		Classe [] classi = new Classe [3];
 		classi[0] = new Classe("4A INFO", studenti, professori);
-		classi[1] = new Classe("4B INFO", studenti2, professori);
+		classi[1] = new Classe("4B INFO", studenti2, professori2);
+                classi[2] = new Classe("4A TELE", studenti3, professori3);
 		
 		int continua = 0;
 		
