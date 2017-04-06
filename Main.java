@@ -23,8 +23,7 @@ public class Main {
 		studenti2[0] =  new Studente ("Ernesto", "Ponzo", "4B Info", 1, "098"); 
 		studenti2[1] =  new Studente ("Luca", "Ferocino", "4B Info", 2,  "765"); 
 		studenti2[2] =  new Studente ("Maria", "Gialli", "4B Info", 3, "789");
-//		System.out.println("studenti2: "+studenti2[0].getNome());
-                
+//		System.out.println("studenti2: "+studenti2[0].getNome());                
                 Studente [] studenti3 = new Studente[30];
                 //"Nome"; "Cognome"; "Classe"; ID; "Password"
 		studenti3[0] =  new Studente ("Gianluca", "Lano", "4A Tele", 1, "753");
@@ -34,8 +33,7 @@ public class Main {
 		
 		Professore [] professori = new Professore[10];
 		professori[0] =  new Professore ("Andrea", "Blu", "4A Info", 1, "123", "Informatica"); 
-		professori[1] =  new Professore ("Piero", "Viola", "4A Info", 2,  "456", "Italiano"); 
-		professori[2] =  new Professore ("Marco", "Nero", "4A Info", 3, "789", "Inglese");
+		professori[1] =  new Professore ("Piero", "Viola", "4A Info", 2,  "456", "Italiano"); 		professori[2] =  new Professore ("Marco", "Nero", "4A Info", 3, "789", "Inglese");
                 
                 Professore [] professori2 = new Professore[10];
 		professori2[0] =  new Professore ("Gianna", "Graco", "4B Info", 1, "754", "Diritto"); 
@@ -45,8 +43,7 @@ public class Main {
                 Professore [] professori3 = new Professore[10];
 		professori3[0] =  new Professore ("Pippo", "Franco", "4A Tele", 1, "754", "Diritto"); 
 		professori3[1] =  new Professore ("Franco", "Impastato", "4A Tele", 2,  "457", "Scienze"); 
-		professori3[2] =  new Professore ("Paolo", "Ken", "4B Info", 3, "956", "Latino");
-		
+		professori3[2] =  new Professore ("Paolo", "Ken", "4B Info", 3, "956", "Latino");		
 		Classe [] classi = new Classe [3];
 		classi[0] = new Classe("4A INFO", studenti, professori);
 		classi[1] = new Classe("4B INFO", studenti2, professori2);
@@ -56,8 +53,7 @@ public class Main {
 		
 		do
 		{
-			System.out.println("0: Esci");
-			System.out.println("1: Login");
+			System.out.println("0: Esci");			System.out.println("1: Login");
 		
 			continua = input.nextInt();
 			input.nextLine();
@@ -67,8 +63,7 @@ public class Main {
 					break;
 				case 0 :
 					break;
-			}
-		
+			}		
 		
 		if(continua == 1)
 		{
@@ -78,8 +73,7 @@ public class Main {
 		
 		accesso.credenziali(classi,tipoPersona);
 //		System.out.println("classeLogin"+ accesso.classeLogin.getStudenti()[0].getCognome());
-		//System.out.println("Sei un " + tipoPersona);
-		int scelta = 0;
+		//System.out.println("Sei un " + tipoPersona);		int scelta = 0;
 		
 		 if(tipoPersona.equals("studente")) {
 			do{
@@ -141,7 +135,7 @@ public class Main {
 		}
 		}while(continua != 0);	
 		
-		System.out.println("FINE PROGRAMMA");
+		System.out.println("IL PROGRAMMA E' TERMINATO");
 	}
 
 }
