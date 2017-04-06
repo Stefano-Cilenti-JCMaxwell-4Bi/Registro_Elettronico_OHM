@@ -4,12 +4,7 @@ public class Verifica {
 	private int voto;
 	private String data;
 	
-	public Verifica() {
-		
-	}
-	
 	public Verifica(int voto, String data) {
-		super();
 		this.voto = voto;
 		this.data = data;
 	}
